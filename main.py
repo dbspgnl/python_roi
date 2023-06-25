@@ -31,7 +31,7 @@ def onMouse(event, x, y, flags, param):     # 마우스 이벤트 핸들 함수
                 roi = img[y0:y0+h, x0:x0+w]         # 원본 이미지에서 선택 영역만 ROI로 지정
                 cv2.imshow('cropped', roi)          # ROI 지정 영역을 새 창으로 표시
                 cv2.moveWindow('cropped', 0,0)     # 새 창을 화면 좌측 상단으로 이동
-                cv2.imwrite('../CV2/img/cropped.jpg', roi)  # ROI 영역만 파일로 저장
+                cv2.imwrite('./cropped.jpg', roi)  # ROI 영역만 파일로 저장
                 print('cropped.')
             
             else:
